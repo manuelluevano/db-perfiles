@@ -4,18 +4,21 @@ $(function(){
     alert("Funciona!!");
         
     //Refacciones
-        $('div.ocultar').hide();
 
         $('.info .datos:first').show();
-
-
-        $('div.enlaces a').on('click', function(){
+        $('nav.enlaces a:first').addClass('activo');
+        $('nav.enlaces a').on('click', function(){
+        $('.ocultar').hide();
+        $('nav.enlaces a').removeClass('activo');
+        $(this).addClass('activo');
 
         var enlace = $(this).attr('href');
-
+        $(enlace).fadeIn(1000);
         console.log(enlace);
         
 
+        return false;
+        
         });
 
 });
