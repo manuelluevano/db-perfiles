@@ -16,6 +16,29 @@ nav.enlaces a.activo {
 div.datos h3 {
   color: #e98c00; }
 
+.btn {
+  color: white;
+  background: #e77000;
+  padding: 10px 15px;
+  text-decoration: none; }
+
+.btn:hover {
+  background: #e75c00; }
+
+.resumen-evento {
+  text-align: center;
+  list-style: none;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .resumen-evento .numero {
+    font-size: 38px;
+    font-weight: bold;
+    color: black; }
+  .resumen-evento li {
+    color: #db2100;
+    font-size: 20px; }
+
 /*# sourceMappingURL=main.sass.map */
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
