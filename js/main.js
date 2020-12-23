@@ -21,4 +21,15 @@ $(function(){
         
         });
 
+
+
+        //Animaciones para los números
+        $('.resumen-evento li:nth-child(1) p').animateNumber({number: 21}, 1200);
+
+        $('.resumen-evento li:nth-child(2) p').animateNumber({number: 32}, 1200);
+
+        $('.resumen-evento li:nth-child(3) p').animateNumber({number: 45}, 1200);
+
+        $('.resumen-evento li:nth-child(4) p').animateNumber({number: 10}, 1200);
+
 });
