@@ -1,0 +1,7 @@
+.lista-fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.lista-fotos a img {
+  width: 65%;
+}
