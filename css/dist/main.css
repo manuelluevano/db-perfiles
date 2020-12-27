@@ -275,6 +275,13 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .ocultar {
   display: none;
 }

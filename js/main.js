@@ -8,6 +8,27 @@ $(function(){
 
     console.log("Mide: " + windowHeight + " pixeles");
 
+    var barraAltura = $('.barra').innerHeight();
+
+    console.log("La barra mide: " + barraAltura + " pixeles");
+
+    $(window).scroll(function(){
+        var scroll  = $(window).scrollTop();
+
+        //console.log('posición: ' + scroll + " pixeles");
+
+        if(scroll > windowHeight){
+            $('.barra').addClass('fixed');
+            console.log('Ya rebasaste!')
+            $('body').css({'margin-top': barraAltura + 'px}'});
+        }else{
+            $('.barra').removeClass('fixed');
+            console.log('Aun no')
+            $('body').css({'margin-top': 'opx'});
+        }
+
+
+    });
 
     //Refacciones
 
