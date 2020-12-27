@@ -2,7 +2,10 @@
 
 //DOM CONTENT LOADED
 $(function () {
-  alert("Funciona!!"); //Refacciones
+  alert("Funciona!!"); // MENU FIJO
+
+  var windowHeight = $(window).height();
+  console.log("Mide: " + windowHeight + " pixeles"); //Refacciones
 
   $('.info .datos:first').show();
   $('nav.enlaces a:first').addClass('activo');

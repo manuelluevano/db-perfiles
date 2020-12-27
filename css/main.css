@@ -221,6 +221,19 @@ textarea {
 
   h2, h3 {
     page-break-after: avoid; } }
+.barra {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px; }
+  .barra a {
+    background: #f7f7f7e1;
+    font-size: 25px;
+    color: #dd581a;
+    text-decoration: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+
 .ocultar {
   display: none; }
 

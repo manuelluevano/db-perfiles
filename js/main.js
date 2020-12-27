@@ -3,6 +3,12 @@ $(function(){
 
     alert("Funciona!!");
         
+    // MENU FIJO
+    var windowHeight = $(window).height();
+
+    console.log("Mide: " + windowHeight + " pixeles");
+
+
     //Refacciones
 
         $('.info .datos:first').show();
@@ -41,5 +47,7 @@ $(function(){
         $('#minutos').html(event.strftime('%M'));
         $('#segundos').html(event.strftime('%S'));
         });
+
+
 
 });
