@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+  .barra {
+    display: none !important;
+    font-size: 30px;
+    color: black;
+    text-align: right;
+  }
+  .bar {
+    display: block !important;
+  }
+}

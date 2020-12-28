@@ -3,6 +3,7 @@
 @import botones
 @import contador
 @import galeria
+@import mediaqueries
 /*# sourceMappingURL=main.sass.map */
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/
 
@@ -229,19 +230,27 @@ textarea
 
 //BARRA
 
-.barra
+nav.menu
   text-align: center
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
   margin-bottom: 100px
-  a
-    background: #f7f7f7e1
-    font-size: 25px
-    color: #dd581a
-    text-decoration: none
-    padding: 20px
-    font-family: Arial, Helvetica, sans-serif
-    
+  background: #f7f7f7e1
+  padding: 20px
+  .barra
+    text-align: center
+    display: inline-block
+    a
+      font-size: 25px
+      color: #dd581a
+      margin-right: 30px
+      text-decoration: none
+      font-family: Arial, Helvetica, sans-serif
+  .bar
+    display: none
+    a
+      font-size: 30px
+      color: black
+      text-align: right
+      
 //FIXED BARRA
 .fixed
   position: fixed

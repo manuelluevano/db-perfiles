@@ -45,6 +45,15 @@ div.datos h3 {
   .lista-fotos a img {
     width: 65%; }
 
+@media (max-width: 480px) {
+  .barra {
+    display: none !important;
+    font-size: 30px;
+    color: black;
+    text-align: right; }
+
+  .bar {
+    display: block !important; } }
 /*# sourceMappingURL=main.sass.map */
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -221,18 +230,26 @@ textarea {
 
   h2, h3 {
     page-break-after: avoid; } }
-.barra {
+nav.menu {
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 100px; }
-  .barra a {
-    background: #f7f7f7e1;
-    font-size: 25px;
-    color: #dd581a;
-    text-decoration: none;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif; }
+  margin-bottom: 100px;
+  background: #f7f7f7e1;
+  padding: 20px; }
+  nav.menu .barra {
+    text-align: center;
+    display: inline-block; }
+    nav.menu .barra a {
+      font-size: 25px;
+      color: #dd581a;
+      margin-right: 30px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif; }
+  nav.menu .bar {
+    display: none; }
+    nav.menu .bar a {
+      font-size: 30px;
+      color: black;
+      text-align: right; }
 
 .fixed {
   position: fixed;
