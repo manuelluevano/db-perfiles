@@ -2,7 +2,11 @@
 
 //DOM CONTENT LOADED
 $(function () {
-  alert("Funciona!!"); // MENU FIJO
+  alert("Funciona!!"); //MENU RESPONSIVE
+
+  $('.bar').on('click', function () {
+    $('.barra').slideToggle();
+  }); // MENU FIJO
 
   var windowHeight = $(window).height();
   console.log("Mide: " + windowHeight + " pixeles");

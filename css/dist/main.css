@@ -56,15 +56,19 @@ div.datos h3 {
   width: 65%;
 }
 
-@media (max-width: 768px) {
-  .barra {
-    display: none !important;
-    font-size: 30px;
-    color: black;
-    text-align: right;
-  }
-  .bar {
+@media (max-width: 480px) {
+  nav.menu .barra {
     display: block !important;
+  }
+  nav.menu .barra a {
+    margin-top: 20px;
+    display: block;
+    margin-right: 0px !important;
+  }
+  nav.menu .bar {
+    display: block !important;
+    margin: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.sass.map */
@@ -279,7 +283,6 @@ nav.menu {
 }
 nav.menu .barra {
   text-align: center;
-  display: inline-block;
 }
 nav.menu .barra a {
   font-size: 25px;
@@ -291,7 +294,8 @@ nav.menu .barra a {
 nav.menu .bar {
   display: none;
 }
-nav.menu .bar a {
+nav.menu .bar i {
+  cursor: pointer;
   font-size: 30px;
   color: black;
   text-align: right;

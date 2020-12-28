@@ -2,7 +2,13 @@
 $(function(){
 
     alert("Funciona!!");
-        
+
+    //MENU RESPONSIVE
+    $('.bar').on('click', function(){
+        $('.barra').slideToggle();
+    });
+
+    
     // MENU FIJO
     var windowHeight = $(window).height();
 
@@ -28,7 +34,13 @@ $(function(){
         }
 
 
+        
+
     });
+
+
+    
+
 
     //Refacciones
 

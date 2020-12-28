@@ -1,11 +1,15 @@
 @media (max-width: 480px) {
-  .barra {
-    display: none !important;
-    font-size: 30px;
-    color: black;
-    text-align: right;
+  nav.menu .barra {
+    display: none;
   }
-  .bar {
+  nav.menu .barra a {
+    margin-top: 20px;
+    display: block;
+    margin-right: 0px !important;
+  }
+  nav.menu .bar {
     display: block !important;
+    margin: 0;
+    padding: 0;
   }
 }
